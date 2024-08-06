@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/submit">
+      <p>
+        <label for="username">Enter a username:</label>
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username" required
+        />
+      </p>
+      <p>
+        <label for="password">Enter a password:</label>
+        <input type="password" id="password" name="password" />
+      </p>
+      <p>
+        <label for="color" id="color">Select a color:</label>
+        <input type="color" name="color" />
+      </p>
+      <p>
+        <!-- Alternative way to label an input -->
+        <label for="number"
+          >Enter a number
+          <input type="number" id="number" name="number" />
+        </label>
+      </p>
+      <p>
+        <label for="date">Pick a date:</label>
+        <input type="date" />
+      </p>
+      <!-- if the type wont submit the form b/c of the "type" attribute-->
+      <button type="button" name="button">Submit</button>
+      <!-- Sunmit the form -->
+      <button>Submit!!!</button>
+      <!-- Sunmit the form -->
+      <input type="submit" value="Click Me!" />
+    </form>
+    <hr />
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" id="" />
+      <button>Search Reddit</button>
+    </form>
+    <hr />
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" id="" />
+      <button>Search Google</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="q" id="" />
+      <button>Search Youtube</button>
+    </form>
+
+    <hr />
+    <h2>More Inputs</h2>
+    <form action="/birds">
+      <div>
+        <input type="checkbox" name="agree_tos" id="agree" checked />
+        <label for="agree">I agree to terms and conditiions</label>
+      </div>
+      <p>
+        <input type="radio" id="XS" name="size" value="xs" checked />
+        <label for="XS">XS</label>
+        <input type="radio" id="S" name="size" value="s" />
+        <label for="S">S</label>
+        <input type="radio" id="M" name="size" value="m" />
+        <label for="M">M</label>
+      </p>
+      <p>
+        <label for="meal">Please select an Entree:</label>
+        <select name="meal" id="meal">
+          <option value="">Please select an option</option>
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </p>
+      <div>
+        <label for="cheese">Amount of cheese</label>
+        <input type="range" id="" min="10" max="100" name="cheese_level" value="2" step="5"/>
+        <label for="numInput">Number Input</label>
+        <input type="number" name="numInput" id="" min="1" max="100" step="2" />
+      </div>
+      <div>
+        <label for="requests">Any Special Requests</label>
+        <textarea name="requests" id="requests" rows="10" columns="10">Text area</textarea>
+      </div>
+      <input type="email" required>
+      <input type="url" name="" id="" required>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

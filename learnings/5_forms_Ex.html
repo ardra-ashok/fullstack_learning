@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>Race Registration!</h1>
+ <form action="/5_forms_Ex.html">
+  <div>
+   <label for="first_name">First Name:</label>
+   <input type="text" name="first_name" id="first_name" required>
+   <label for="last_name">Last Name:</label>
+   <input type="text" name="last_name" id="last_name" required>
+  </div>
+  <div>
+   <p for="select_race">Select a Race:</p>
+   <div>
+    <input type="radio" value="fun_run" name="selectRace" id="fun_run" >
+    <label for="fun_run">Fun Run 5k</label><br>
+   </div>
+   <div>
+    <input type="radio" value="half_marathon" name="selectRace" id="half_marathon">
+    <label for="half_marathon" name="half_marathon">Half Marathon</label><br>
+   </div>
+    <div>
+     <input type="radio" value="full_marathon" name="selectRace" id="full_marathon">
+    <label for="full_marathon">Full Marathon</label>
+    </div>
+  </div>
+  <div>
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" placeholder="email" required>
+   <label for="password">Password</label>
+   <input type="password" name="password" id="password" value="" placeholder="password" required>
+  </div>
+  <div>
+   <label for="ageGroup">Select Age group</label>
+   <select name="age_group" id="age_group">
+    <option value="kids"></option>
+    <option value="youngAdults">18-30</option>
+    <option value="adults">30-50</option>
+    <option value="seniors">50+</option>
+   </select>
+  </div>
+  <button type="submit">Register!</button>
+ </form>
+</body>
+</html
