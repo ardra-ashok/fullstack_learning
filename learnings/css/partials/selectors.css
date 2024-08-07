@@ -1,0 +1,98 @@
+/* Universal selector */
+/* *{
+ color:green;
+} */
+
+/* Element Selector */
+button{
+ font-size: 30px;
+ background-color: #a8dadc;
+}
+
+h1, h2 {
+ color:rgb(118, 51, 51);
+}
+body{
+ /* background-color: #f1fbff ; */
+}
+
+span{
+ color: #457b9d;
+}
+/* ID selector */
+#signup{
+ background-color: #1d3557;
+ color:#f1faee;
+}
+
+/* Class selector */
+.spanTag{
+ background-color: #e63946;
+ color:#f1faee;
+ font-size: 16px;
+}
+
+/* Descendant selector */
+
+.post a{
+ color:#12904b;
+}
+
+footer a{
+ color: #e63946;
+}
+
+/* Adjacent Selector - Select only the elements that are immediately preceeded by another specified element on the same level ex:h1+p  */
+
+h2 + button{
+ background-color: #e63946;
+}
+
+/* Direct Descendant Element - Select only the element which are direct child to the specified element Ex: div>li */
+footer > a{ 
+ color:#12904b;
+}
+
+/* Attribute selector - Select all input elements where the type attribute set to some value ex: input[type="text"] */
+input[type="password"]{
+ color:brown;
+}
+
+a[href*="google"]{
+ color:magenta;
+}
+
+/* Pseudo classes - keyword added to a selector that specifies a special state of the selected elements */
+
+a:hover{
+ color:white;
+ background-color: #e63946;
+}
+button:active{
+ background-color:blueviolet;
+}
+.sec:nth-of-type(odd){
+background-color: #42a125;
+}
+
+.sec:nth-of-type(2n){
+background-color: #42a125;
+}
+
+/* Pseudo Elements - Keywords added to a selector that lets you style a a particular part of the selected element ex: ::after */
+h2::first-letter{
+ font-size: 40px;
+}
+
+section::selection{
+ background-color: aquamarine;
+}
+
+/* Specificity - hwo the browser decides which rules to apply when multiple rules could apply to the same element.
+its a measure of how specific given selector is. The more specific selector wins */
+
+/* Inline styles > ID > class > elements */
+/* !important tag */
+button{
+ color: inherit;
+}
